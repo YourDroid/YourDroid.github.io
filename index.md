@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to YourDroid
 
 You can use the [editor on GitHub](https://github.com/YourDroid/yourdroid.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
