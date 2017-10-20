@@ -7,5 +7,5 @@
 
 ### Скачать
 
-<font color="red;">Пока программа в стадии alpha и поэтому она может установить андроид пока только на linux!</font>
+<font color="red">Пока программа в стадии alpha и поэтому она может установить андроид пока только на linux!</font>
 [Скачать](https://github.com/YourDroid/YourDroid/releases)
