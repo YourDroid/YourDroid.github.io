@@ -9,5 +9,5 @@
 
 ### Скачать
 
-<font color="red">Программа на стадии beta и поэтому в ней могут быть ошибки   она может установить андроид пока только на компьютеры с uefi на linux и windows!</font>
+<font color="red">Программа на стадии beta и поэтому в ней могут быть ошибки и  она может установить андроид пока только на компьютеры с uefi на linux и windows!</font>
 [Скачать](https://github.com/YourDroid/YourDroid/releases/latest)
