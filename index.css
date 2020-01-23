@@ -1,0 +1,87 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: local;
+}
+
+body {
+	margin: 0;
+	text-align: center;
+}
+
+.logo {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+}
+
+/* Sections */
+
+#main {
+	padding: 40px 0 0;
+	background-color: #222222;
+}
+
+.shadow {
+	-webkit-box-shadow: 0px -8px 10px 8px rgba(0,0,0,0.46);
+	-moz-box-shadow: 0px -8px 10px 8px rgba(0,0,0,0.46);
+	box-shadow: 0px -8px 10px 8px rgba(0,0,0,0.46);
+	visibility: hidden; /* REMOVE!!! */
+}
+
+/* filling our empty div with some content then hiding it to let the shadow appear */
+.shadow:after {
+	content: '.';
+	visibility: hidden;
+}
+
+.description {
+	background-color: white;
+}
+
+/* ======= */
+
+
+
+#main h1 {
+	margin: 45px auto 0;
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 40px;
+	color: white;
+}
+
+#main h2 {
+
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 20px;
+	color: gray;
+}
+
+#description h1 {
+	margin: 45px auto 0;
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 40px;
+	color: #333333;
+}
+
+#description h2 {
+
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 20px;
+	color: #333333;
+}
+
+#slideshow {
+	position: relative;
+	margin: 30px auto 0;
+}
+
+#slideshow .screenshot {
+	display: block;
+	margin: auto auto;
+	width: auto;
+	height: 400px;
+}
