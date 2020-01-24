@@ -1,7 +1,10 @@
-@font-face {
-	font-family: 'Montserrat';
-	src: local;
+@font-face{ /* for IE */
+font-family:'Montserrat';
+src:url(fishy.eot);
 }
+@font-face { /* for non-IE */
+font-family: 'Montserrat';
+src: url(http://:/) format("No-IE-404"), url('/fonts/Montserrat-Medium.ttf') format('truetype');
 
 body {
 	margin: 0;
