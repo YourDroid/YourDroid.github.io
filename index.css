@@ -20,6 +20,7 @@
 body {
 	margin: 0;
 	text-align: center;
+	overflow-x: hidden;
 }
 
 .logo {
@@ -34,6 +35,7 @@ body {
 	padding: 40px 0 0;
 	background-color: #222222;
 }
+
 
 body:after {
 	content: "beta";
@@ -148,6 +150,7 @@ body:after {
 
 .description {
 	background-color: white;
+	padding: 0 0 40px;
 }
 
 /* ======= */
@@ -207,4 +210,10 @@ body:after {
 	width: auto;
 	height: 350px;
 	margin-top: 10px;
+}
+
+#footer {
+	text-align: center;
+	padding: 40px 0 0;
+	background-color: #222222;
 }
