@@ -36,7 +36,7 @@ body {
 	background-color: #222222;
 }
 
-
+/* beta title */
 body:after {
 	content: "beta";
 	text-transform: uppercase;
@@ -95,7 +95,7 @@ body:after {
 	-moz-box-shadow: 0px 7px 0px 0px rgba(60,60,60,1);
 	box-shadow: 0px 7px 0px 0px rgba(60,60,60,1);
 
-	transition: border-radius 0.5s ease 0s, background-position 0.5s ease 0s, position 0.5s ease 0s;
+	transition: border-radius 0.5s ease 0s, background-position 0.5s ease 0s, transform 0.5s ease 0s;
 }
 
 .download-button:hover {
@@ -107,7 +107,7 @@ body:after {
 }
 
 .download-button:active {
-	top: 3px;
+	top: 2px;
 }
 
 .download-button:after {
@@ -166,7 +166,6 @@ body:after {
 }
 
 #main h2 {
-
 	font-family: Montserrat;
 	font-weight: 500;
 	font-size: 20px;
@@ -179,11 +178,11 @@ body:after {
 	font-weight: 700;
 	font-size: 40px;
 	color: #333333;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
-#description span {
-	text-align: center;
+#description h2 {
+	text-align: inherit;
 	font-family: Montserrat;
 	font-weight: 500;
 	font-size: 20px;
@@ -199,6 +198,28 @@ body:after {
 	color: #333333;
 }
 
+#links {
+	position: relative;
+	width: 64px;
+	height: 64px;
+	text-align: center;
+}
+
+#links img {
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	-webkit-transition: filter 0.35s ease;
+  	-moz-transition: filter 0.35s ease;
+  	-o-transition: filter 0.35s ease;
+  	transition: filter 0.35s ease;
+  	filter: grayscale(100%) brightness(150%);
+}
+
+#vk img.vk-default:hover {
+	filter: grayscale(0%) brightness(100%);
+}
+
 #slideshow {
 	position: relative;
 	margin: 30px auto 0;
@@ -212,8 +233,18 @@ body:after {
 	margin-top: 10px;
 }
 
-#footer {
+footer {
 	text-align: center;
-	padding: 40px 0 0;
+	padding: 0 0 0;
 	background-color: #222222;
+	max-width: 100%;
+}
+
+
+footer img {
+	display: block;
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	size: 50%;
 }
