@@ -1,11 +1,20 @@
-@font-face{ /* for IE */
+/* for IE */
+@font-face { 
 	font-family:'Montserrat';
 	src: url(fishy.eot);
 }
 
-@font-face { /* for non-IE */
+/* for other browsers */
+@font-face {
 	font-family: 'Montserrat';
 	src: url(http://:/) format("No-IE-404"), url('/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+.github-icon {
+	background: url("media/github/GitHub-Mark-Light-32px.png");
+	height: 32px;
+	width: 32px;
+	display: block;
 }
 
 body {
@@ -24,6 +33,103 @@ body {
 #main {
 	padding: 40px 0 0;
 	background-color: #222222;
+}
+
+body:after {
+	content: "beta";
+	text-transform: uppercase;
+	color: white;
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 30px;
+	background-color: #77b935;
+	padding: 3px;
+	display: block;
+
+
+	position: absolute;
+	top: -60px;
+	right: -150px;
+
+	transform-origin: 0 0;
+	
+    -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#main h2 {
+	padding-bottom: 20px;
+}
+
+.download-button {
+    /*background-color: #77b935;*/
+  	color: white;
+    padding: 12px 16px;
+  	font-size: 20px;
+  	font-family: Montserrat;
+  	font-weight: 600;
+  	text-decoration: none;
+  	overflow: auto;
+  	position: relative;
+
+  	background-size: 400% 400%;
+  	background: rgb(119,185,53);
+	background: -moz-linear-gradient(193deg, rgba(119,185,53,1) 50%, rgba(173,255,90,1) 100%);
+	background: -webkit-linear-gradient(193deg, rgba(119,185,53,1) 50%, rgba(173,255,90,1) 100%);
+	background: linear-gradient(193deg, rgba(119,185,53,1) 50%, rgba(173,255,90,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#77b935",endColorstr="#adff5a",GradientType=1);
+
+  	background-position: 0px 0px;
+
+  	border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border: 0px solid #000000;
+
+	-webkit-box-shadow: 0px 7px 0px 0px rgba(60,60,60,1);
+	-moz-box-shadow: 0px 7px 0px 0px rgba(60,60,60,1);
+	box-shadow: 0px 7px 0px 0px rgba(60,60,60,1);
+
+	transition: border-radius 0.5s ease 0s, background-position 0.5s ease 0s, position 0.5s ease 0s;
+}
+
+.download-button:hover {
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+
+	background-position: 100% 100%;
+}
+
+.download-button:active {
+	top: 3px;
+}
+
+.download-button:after {
+	background: url("media/github/GitHub-Mark-Light-32px.png");
+	content: "";
+	display: inline-block;
+	height: 32px;
+	width: 32px;
+	position: relative;
+	vertical-align: middle;
+	margin-left: 9px;
+}
+
+.download-button {
+  background-color: #77b935;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button i {
+	display: block;
+	text-align: center;
 }
 
 .shadow {
@@ -66,13 +172,23 @@ body {
 #description h1 {
 	margin: 45px auto 0;
 	font-family: Montserrat;
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 40px;
 	color: #333333;
+	margin-bottom: 40px;
+}
+
+#description span {
+	text-align: center;
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 20px;
+	color: #333333;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
 #description h2 {
-
 	font-family: Montserrat;
 	font-weight: 500;
 	font-size: 20px;
@@ -88,5 +204,6 @@ body {
 	display: block;
 	margin: auto auto;
 	width: auto;
-	height: 400px;
+	height: 350px;
+	margin-top: 10px;
 }
