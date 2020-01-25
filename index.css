@@ -69,7 +69,7 @@ body:after {
 	padding-bottom: 20px;
 }
 
-.download-button {
+#download-button {
     /*background-color: #77b935;*/
   	color: white;
     padding: 12px 16px;
@@ -101,7 +101,7 @@ body:after {
 	transition: border-radius 0.5s ease 0s, background-position 0.5s ease 0s, transform 0.5s ease 0s;
 }
 
-.download-button:hover {
+#download-button:hover {
 	border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
@@ -109,12 +109,12 @@ body:after {
 	background-position: 100% 100%;
 }
 
-.download-button:active {
+#download-button:active {
 	top: 2px;
 }
 
 /* github logo */
-.download-button:after {
+#download-button:after {
 	background: url("media/github/GitHub-Mark-Light-32px.png");
 	content: "";
 	display: inline-block;
@@ -123,6 +123,20 @@ body:after {
 	position: relative;
 	vertical-align: middle;
 	margin-left: 9px;
+}
+
+.dropdown: {
+	display: none;
+	position: absolute;
+	min-width: 100px;
+	z-index: 1;
+	position: inherit;
+}
+
+.dropdown {
+	max-height: 150%;
+	background-color: white;
+	width: auto;
 }
 
 #download-description {
@@ -134,7 +148,7 @@ body:after {
 	padding-top: 5px;
 }
 
-.download-button {
+#download-button {
   background-color: #77b935;
   border: none;
   color: white;
@@ -197,11 +211,12 @@ body:after {
 #description h2 {
 	text-align: inherit;
 	font-family: Montserrat;
-	font-weight: 500;
+	font-weight: 100;
 	font-size: 20px;
 	color: #333333;
 	padding-left: 400px;
 	padding-right: 400px;
+	line-height: 35px;
 }
 
 #description h2 {
@@ -243,7 +258,7 @@ body:after {
 	margin: auto auto;
 	width: auto;
 	height: 350px;
-	margin-top: 5px;
+	margin-top: 10px;
 }
 
 footer {
