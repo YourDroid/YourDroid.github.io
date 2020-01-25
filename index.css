@@ -1,3 +1,6 @@
+/* YourDroid (c) 2020. no distribution allowed
+   designed by Arbuzik999 (github.com/Arbuzik999) */
+
 /* for IE */
 @font-face { 
 	font-family:'Montserrat';
@@ -110,6 +113,7 @@ body:after {
 	top: 2px;
 }
 
+/* github logo */
 .download-button:after {
 	background: url("media/github/GitHub-Mark-Light-32px.png");
 	content: "";
@@ -119,6 +123,15 @@ body:after {
 	position: relative;
 	vertical-align: middle;
 	margin-left: 9px;
+}
+
+#download-description {
+	color: rgb(100,100,100);
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 13px;
+	padding-top: 5px;
 }
 
 .download-button {
@@ -187,8 +200,8 @@ body:after {
 	font-weight: 500;
 	font-size: 20px;
 	color: #333333;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 400px;
+	padding-right: 400px;
 }
 
 #description h2 {
@@ -202,13 +215,13 @@ body:after {
 	position: relative;
 	width: 64px;
 	height: 64px;
-	text-align: center;
 }
 
 #links img {
 	position: absolute;
 	width: 48px;
 	height: 48px;
+	padding: 5px;
 	-webkit-transition: filter 0.35s ease;
   	-moz-transition: filter 0.35s ease;
   	-o-transition: filter 0.35s ease;
@@ -230,7 +243,7 @@ body:after {
 	margin: auto auto;
 	width: auto;
 	height: 350px;
-	margin-top: 10px;
+	margin-top: 5px;
 }
 
 footer {
