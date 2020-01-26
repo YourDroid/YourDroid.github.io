@@ -32,6 +32,11 @@ body {
 	margin: 0 auto;
 }
 
+/*
+h1, h2, p {
+	-webkit-font-smoothing: antialiased;
+}
+
 /* Sections */
 
 #main {
@@ -94,9 +99,9 @@ body:after {
 	-webkit-border-radius: 15px 15px 15px 15px;
 	border: 0px solid #000000;
 
-	-webkit-box-shadow: 0px 7px 0px 0px rgba(60,60,60,1);
-	-moz-box-shadow: 0px 7px 0px 0px rgba(60,60,60,1);
-	box-shadow: 0px 7px 0px 0px rgba(60,60,60,1);
+	-webkit-box-shadow: 0px 7px 0px 0px rgba(20,20,20,0.5);
+	-moz-box-shadow: 0px 7px 0px 0px rgba(20,20,20,0.5);
+	box-shadow: 0px 7px 0px 0px rgba(20,20,20,0.5);
 
 	transition: border-radius 0.5s ease 0s, background-position 0.5s ease 0s, transform 0.5s ease 0s;
 }
@@ -211,7 +216,7 @@ body:after {
 #description h2 {
 	text-align: inherit;
 	font-family: Montserrat;
-	font-weight: 100;
+	font-weight: 430;
 	font-size: 20px;
 	color: #333333;
 	padding-left: 400px;
@@ -219,11 +224,22 @@ body:after {
 	line-height: 35px;
 }
 
-#description h2 {
+#list {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#list ul {
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+#list li {
 	font-family: Montserrat;
-	font-weight: 500;
+	font-weight: 430;
 	font-size: 20px;
 	color: #333333;
+	text-align: left
 }
 
 #links {
@@ -263,16 +279,31 @@ body:after {
 
 footer {
 	text-align: center;
-	padding: 0 0 0;
+	padding-bottom: 1px;
 	background-color: #222222;
 	max-width: 100%;
 }
-
 
 footer img {
 	display: block;
 	position: relative;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 0px;
 	size: 50%;
+}
+
+footer p, h2 {
+	font-size: 15px;
+	font-family: Montserrat;
+	font-weight: 600;
+	color: gray;
+	padding-bottom: 0px;
+}
+
+footer h2 {
+	font-size: 12px;
+}
+
+footer a {
+	color: rgb(200, 200, 200);
 }
