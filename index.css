@@ -44,7 +44,7 @@ h1, h2, p {
 	background-color: #222222;
 }
 
-/* beta title */
+/* beta title
 body:after {
 	content: "beta";
 	text-transform: uppercase;
@@ -68,7 +68,7 @@ body:after {
     -moz-transform: rotate(45deg); 
     padding-left: 100px;
     padding-right: 100px;
-}
+}*/
 
 #main h2 {
 	padding-bottom: 20px;
